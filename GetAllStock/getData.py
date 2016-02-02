@@ -20,6 +20,5 @@ for symbol in symbolsList:                      # + means create file
         print("Last Value for", symbol, lastValue)
         #time.sleep(2)
         for point in dataPoints:
-            newFile.write(str("Symbol: "+symbol+","+"Price: " + str(point[1]) + "\n"))
+            newFile.write(str("Symbol: "+symbol+","+"Price: " + str(point[1]) + "Time: " + str(point[0]) + "\n"))
         newFile.close()
-print("Done")
